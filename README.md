@@ -7,9 +7,8 @@
 * [I/O](#io)
 * [Run](#run)
 * [Options](#options)
-    * [Kernel](#kernel)
-    * [Miscellaneous](#miscellaneous)
-* [Plotting](#plotting)
+    * [Save](#save)
+    * [Plot](#Plot)
 
 
 
@@ -87,19 +86,21 @@ python compare_catalogs.py --mask_file_name mask.pickle --rmin 0 --rmax 312.8981
 ## Options
 The following portion contains optional arguments that may be needed or wanted when running CenterFinder.
 
-#### Plot the Mask and Volume Boundary
+#### Plot
 Add the following argument to have CatalogComparer create and show a plot of the mask file along with the Volume boundary applied.
 ```
 --show_plots True
 ```
 
 
-#### Save output
+#### Save
 Add the --s argument to save additional outputs.
 ```
 python compare_catalogs.py --mask_file_name mask.pickle --rmin 0 --rmax 312.89816 --compare 0 --data_files VF_comoving_holes.txt V
 F_comoving_maximal.txt VF_comoving_holes.txt VF_comoving_maximal.txt --show_plots True --s True
 ```
+
+![Alt text](figures/output.png "Galaxy Holes and Max")
 
 ![Alt text](figures/mask.png "Mask Visuals")
 
